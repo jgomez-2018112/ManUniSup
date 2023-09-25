@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/*CSS DE DIEGO*/
+label {
+  background: linear-gradient(to bottom, #01c4f5, #0300be); /* Cambia este valor al color que desees */
+  color: white; /* Cambia el color del texto para que contraste con el fondo */
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+body {
+  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle, #1E2EDE, #141204);
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.input-group input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Diseño Diego racanac*/
+.btn {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #0f0280;
+  border-radius: 5px;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  font-family: Verdana, Geneva, Century Gothic, sans-serif;
+  margin: 10px;
+}
+
+/* Estilos cuando el cursor se coloca sobre el botón */
+.btn:hover {
+      background-color: #1f3a63; /* Cambiar el color de fondo */
+      color: white; /* Cambiar el color del texto a negro */
+      transform: scale(1.1); /* Hacer zoom al botón */
+}

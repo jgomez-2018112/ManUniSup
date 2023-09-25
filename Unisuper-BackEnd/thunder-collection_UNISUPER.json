@@ -1,0 +1,340 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "UNISUPER",
+    "dateExported": "2023-09-19T01:08:09.339Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f3cc11c6-d4b3-4392-94dc-19e43224a7cd",
+            "name": "INSERTS INFRA",
+            "containerId": "",
+            "created": "2023-08-28T14:27:59.908Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "6c52c82d-ee91-4bd4-9c62-60d15fd3eff9",
+            "name": "INSERTS SAC",
+            "containerId": "",
+            "created": "2023-08-31T17:56:33.035Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "56f4afc5-347b-4d6b-a7e5-28867063ffc2",
+            "name": "USUARIOS",
+            "containerId": "f3cc11c6-d4b3-4392-94dc-19e43224a7cd",
+            "created": "2023-09-07T22:02:18.944Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "TIENDAS",
+            "containerId": "f3cc11c6-d4b3-4392-94dc-19e43224a7cd",
+            "created": "2023-09-07T22:03:17.189Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "39975e45-1433-410f-9646-0cc719d38939",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "56f4afc5-347b-4d6b-a7e5-28867063ffc2",
+            "name": "test",
+            "url": "user/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-28T15:46:32.745Z",
+            "modified": "2023-08-28T15:55:01.960Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f1ca40c7-9d95-40ce-87e2-e024ce659b0c",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "56f4afc5-347b-4d6b-a7e5-28867063ffc2",
+            "name": "insertINFRA",
+            "url": "user/insertUserINFRA",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-28T15:55:15.903Z",
+            "modified": "2023-09-19T00:57:09.867Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "telefono",
+                        "value": "0"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "pr"
+                    },
+                    {
+                        "name": "correo",
+                        "value": "prgrupopit.com"
+                    },
+                    {
+                        "name": "id_rol",
+                        "value": "4"
+                    },
+                    {
+                        "name": "id_usuario",
+                        "value": "pr"
+                    },
+                    {
+                        "name": "contraseña",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6f3256c3-8cce-48f0-93a4-a93a6a4e2271",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "56f4afc5-347b-4d6b-a7e5-28867063ffc2",
+            "name": "getPersonalINFRA",
+            "url": "user/getPersonaINFRA",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-29T13:45:53.962Z",
+            "modified": "2023-08-31T18:02:31.872Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0f66bf50-4326-4878-805f-15a3c45d4226",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "6c52c82d-ee91-4bd4-9c62-60d15fd3eff9",
+            "name": "GET",
+            "url": "user/getPersonasSAC",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-31T17:56:39.451Z",
+            "modified": "2023-08-31T17:59:35.395Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bec77d77-0391-4288-9ec2-c78530adb7da",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "6c52c82d-ee91-4bd4-9c62-60d15fd3eff9",
+            "name": "insertSAC",
+            "url": "user/insertUserSAC",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-08-31T19:52:48.172Z",
+            "modified": "2023-09-05T21:56:05.650Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id",
+                        "value": "111",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "PRUEBA"
+                    },
+                    {
+                        "name": "apellido",
+                        "value": "PRUEBA"
+                    },
+                    {
+                        "name": "rol",
+                        "value": "4"
+                    },
+                    {
+                        "name": "estado",
+                        "value": "1"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "prueba 2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3ec35b08-71d0-4c90-90f8-1640860daa51",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "test",
+            "url": "td/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-09-07T22:03:32.899Z",
+            "modified": "2023-09-07T22:12:07.253Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8df4faf6-dbc5-40bc-b18a-1283b9407ecf",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "insertTienda",
+            "url": "td/addTB_T_Tienda",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-09-08T13:38:30.221Z",
+            "modified": "2023-09-08T13:46:55.189Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id_tienda",
+                        "value": "PRUEBA1"
+                    },
+                    {
+                        "name": "tienda",
+                        "value": "DISTRI"
+                    },
+                    {
+                        "name": "id_tipo_tienda",
+                        "value": "4"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2716ea1b-9050-42d4-97e4-bc20b6eecdfe",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "getTiposTienda",
+            "url": "td/getTipoTienda",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-09-08T20:15:32.232Z",
+            "modified": "2023-09-08T20:18:15.459Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b90f72d3-9896-4170-a949-450e8fc866c4",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "insertSup",
+            "url": "td/addTB_PT_Tienda_Persona",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-09-11T16:24:15.068Z",
+            "modified": "2023-09-11T20:18:18.999Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id_tienda",
+                        "value": "pppppo"
+                    },
+                    {
+                        "name": "id_usuario_1",
+                        "value": "10"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5e14875-5160-466f-a061-56c1825edf42",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "insertTecnico",
+            "url": "td/addTB_PSE_Supervisor_Tecnico_Tienda",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-09-11T16:28:13.783Z",
+            "modified": "2023-09-11T16:30:55.026Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id_tienda",
+                        "value": "ddddd"
+                    },
+                    {
+                        "name": "clase",
+                        "value": "2"
+                    },
+                    {
+                        "name": "id_persona",
+                        "value": "100"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2bd3a10-4d39-4887-aff8-2422c420e5ec",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "getClaseTec",
+            "url": "td/getClaseTec",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-09-11T17:27:17.319Z",
+            "modified": "2023-09-11T17:28:10.977Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "46ec9d5b-3743-4b74-be5f-bcbe9de5d42b",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "9ff0b81d-c857-4b7f-a576-acf391cf401b",
+            "name": "getPersonaCompra",
+            "url": "td/getPersonaCompra",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-09-12T13:49:16.496Z",
+            "modified": "2023-09-12T13:49:33.859Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c4c865b1-6d6d-42d6-acdb-93b4f2935eb6",
+            "colId": "34faaa6b-aab6-415b-b5cf-5aa5984f82f8",
+            "containerId": "56f4afc5-347b-4d6b-a7e5-28867063ffc2",
+            "name": "getRol",
+            "url": "user/getRolInfra",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-09-18T21:29:13.420Z",
+            "modified": "2023-09-18T22:19:20.276Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:1433/"
+        }
+    }
+}
